@@ -23,6 +23,7 @@ public class SelectionSorting {
 		{
 			arr[i] = sc.nextInt();
 		}
+		sc.close();
 		return arr;
 	}
 	
