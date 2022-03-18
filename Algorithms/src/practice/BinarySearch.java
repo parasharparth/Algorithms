@@ -6,22 +6,15 @@ public class BinarySearch {
 	public static void main(String args[])
 	{
 		//The first step is to get the input from user
-		int number = input();
+		int number = InputNumber.input();
 		
-		int[] arr = {1,2,5,6,7,83,26,78,99,100};
+		int[] arr = InputArray.input();
 		
 		//The second step is to sort the array
 		Arrays.sort(arr);
 		
 		//The third step is to call the binarySearch Function to print the result
 		binarySearch(arr,number);
-	}
-	
-	@SuppressWarnings("resource")
-	public static int input()
-	{
-		System.out.println("Enter the number that you want to search");
-		return new Scanner(System.in).nextInt();
 	}
 	
 	public static void binarySearch(int[] arr, int number)

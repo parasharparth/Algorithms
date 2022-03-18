@@ -1,21 +1,13 @@
 package practice;
 
-import java.util.*;
 public class LinearSearch {
 
 	public static void main(String args[])
 	{
-		int number = input();
+		int number = InputNumber.input();
 		
-		int[] arr = {1,2,7,4,6,88,33,56,78,100};
+		int[] arr = InputArray.input();
 		linearSearch(arr, number);
-	}
-	
-	@SuppressWarnings("resource")
-	public static int input()
-	{
-		System.out.println("Enter the number you want to search");
-		return new Scanner(System.in).nextInt();
 	}
 	
 	public static void linearSearch(int[] arr, int number)

@@ -5,16 +5,10 @@ public class BinarySearch2 {
 
 	public static void main(String args[])
 	{
-		int number = input();
-		int[] arr = {1,2,3,4,6,7,8,9,0,33,567,877,344,555};
+		int number = InputNumber.input();
+		int[] arr = InputArray.input();
+		Arrays.sort(arr);
 		binarySearch(arr,number);
-	}
-	
-	@SuppressWarnings("resource")
-	public static int input()
-	{
-		System.out.println("Enter the number you want to search");
-		return new Scanner(System.in).nextInt();
 	}
 	
 	public static void binarySearch(int[] arr, int number)
