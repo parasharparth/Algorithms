@@ -6,6 +6,6 @@ public class RandomisedArray {
 	
      public static int[] getRandomizedArray()
      {
-    	return new Random().ints(100,10,10000).toArray();
+    	return new Random().ints(10,10,10000).toArray();
      }
 }
