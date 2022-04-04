@@ -1,4 +1,4 @@
-package practice;
+package util;
 
 import java.util.Random;
 

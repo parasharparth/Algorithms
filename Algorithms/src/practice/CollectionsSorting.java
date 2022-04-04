@@ -2,6 +2,8 @@ package practice;
 
 import java.util.*;
 import java.util.stream.Collectors;
+
+import util.InputArray;
 public class CollectionsSorting {
 
 	public static void main(String args[])

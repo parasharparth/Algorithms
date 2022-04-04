@@ -2,6 +2,8 @@ package practice;
 
 import java.util.Arrays;
 import java.util.Random;
+
+import util.InputNumber;
 public class BinarySearch1 {
 
 	public static void main(String args[])

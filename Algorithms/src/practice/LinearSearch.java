@@ -1,5 +1,8 @@
 package practice;
 
+import util.InputArray;
+import util.InputNumber;
+
 public class LinearSearch {
 
 	public static void main(String args[])

@@ -1,6 +1,9 @@
 package practice;
 
 import java.util.*;
+
+import util.InputArray;
+import util.InputNumber;
 public class BinarySearch {
 
 	public static void main(String args[])

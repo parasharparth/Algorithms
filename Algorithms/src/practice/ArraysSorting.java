@@ -2,6 +2,9 @@ package practice;
 
 import java.util.Arrays;
 
+import util.DisplayArray;
+import util.InputArray;
+
 public class ArraysSorting {
 
 	public static void main(String args[])

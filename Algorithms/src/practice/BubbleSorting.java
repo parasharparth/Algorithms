@@ -2,6 +2,8 @@ package practice;
 
 import java.util.*;
 
+import util.DisplayArray;
+
 public class BubbleSorting {
 
 	public static void main(String args[])

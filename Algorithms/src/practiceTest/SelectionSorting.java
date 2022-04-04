@@ -1,7 +1,7 @@
 package practiceTest;
 
-import practice.DisplayArray;
-import practice.RandomisedArray;
+import util.DisplayArray;
+import util.RandomisedArray;
 
 public class SelectionSorting {
 

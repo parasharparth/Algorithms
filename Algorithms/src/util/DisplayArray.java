@@ -1,4 +1,4 @@
-package practice;
+package util;
 
 public class DisplayArray {
 

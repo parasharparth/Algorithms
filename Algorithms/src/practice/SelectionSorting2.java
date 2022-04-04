@@ -1,5 +1,8 @@
 package practice;
 
+import util.DisplayArray;
+import util.InputArray;
+
 public class SelectionSorting2 {
 
 	public static void main(String args[])

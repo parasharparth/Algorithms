@@ -1,6 +1,8 @@
 package practice;
 
 import java.util.Random;
+
+import util.DisplayArray;
 public class SelectionSorting1 {
 	
 	public static void main(String args[])

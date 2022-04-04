@@ -2,6 +2,8 @@ package practice;
 
 import java.util.Random;
 
+import util.InputNumber;
+
 public class LinearSearch1 {
 
 	public static void main(String args[])

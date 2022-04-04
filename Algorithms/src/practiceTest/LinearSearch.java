@@ -1,8 +1,9 @@
 package practiceTest;
 
 import java.util.HashMap;
-import practice.InputNumber;
-import practice.RandomisedArray;
+
+import util.InputNumber;
+import util.RandomisedArray;
 
 public class LinearSearch {
 
