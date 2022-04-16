@@ -21,7 +21,7 @@ public class BinarySearch {
 		else
 		{
 			System.out.println("The number is found at position:- "+ result);
-		}
+		} 
 	}
 	
 	public static int binarySearch(int num, int[] arr)

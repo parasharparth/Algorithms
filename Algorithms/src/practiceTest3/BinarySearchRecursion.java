@@ -17,7 +17,7 @@ public class BinarySearchRecursion {
 		Arrays.sort(arr);
 		
 		//The third step is to display the array
-		DisplayArray.result(arr);
+		DisplayArray.result(arr); 
 		
 		//Calculate the left and right
 		int left = 0;

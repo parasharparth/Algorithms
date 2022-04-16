@@ -12,7 +12,7 @@ public class BubbleSort {
 		
 		//Display the Array
 		DisplayArray.result(arr);
-		
+		 
 		//Call the bubble sort
 		int[] result = bubbleSorting(arr);
 		

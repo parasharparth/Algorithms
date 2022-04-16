@@ -16,7 +16,7 @@ public class LinearSearch {
 		{
 			System.out.println("The number is not found in the array");
 		}
-		else
+		else 
 		{
 			System.out.println("The number is found at position:- " + result);
 		}

@@ -13,7 +13,7 @@ public class BinarySearch {
 		int[] arr = RandomisedArray.getRandomizedArray();
 		DisplayArray.result(arr);
 		
-		Arrays.sort(arr);
+		Arrays.sort(arr); 
 		int result = binarySearch(InputNumber.input(),arr);
 		
 		if(result == -1)

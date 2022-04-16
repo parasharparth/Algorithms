@@ -10,3 +10,4 @@ public class InsertionSort {
 		int[] arr = RandomisedArray.getRandomizedArray();
 	}
 }
+ 
