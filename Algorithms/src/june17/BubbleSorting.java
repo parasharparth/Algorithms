@@ -15,7 +15,7 @@ public class BubbleSorting {
 		 * Generate a randomized array using random
 		 ***********************************************/
 		int[] result = bubbleSort(new Random().ints(10,0,10000).toArray());
-		
+		 
 		/********************************
 		 * Print the sorted array
 		 *******************************/

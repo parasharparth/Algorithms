@@ -9,7 +9,7 @@ import java.util.Random;
  * @author Parth Parashar
  *********************************************************************/
 public class OptimizedBubbleSorting {
-
+ 
 	public static void main(String[] args)
 	{
 		
