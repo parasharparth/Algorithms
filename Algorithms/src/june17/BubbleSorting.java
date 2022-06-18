@@ -23,7 +23,7 @@ public class BubbleSorting {
 		{
 			System.out.print(result[i]+",");
 		}
-	}
+	} 
 	 
 	/****************************************************************************
 	 * Bubble Sort function for sorting the array and returning the sorted array

@@ -26,7 +26,7 @@ public class OptimizedBubbleSorting {
 		{
 			System.out.print(arr[i]+",");
 		}
-	} 
+	}  
 	
 	public static int[] optimizedBubbleSorting(int[] arr)
 	{
