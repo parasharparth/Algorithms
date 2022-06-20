@@ -1,7 +1,6 @@
 package Jun20;
 
 public class SelectionSortPractice {
-
     public static void main(String args[])
     {
         int[] arr = {9,5,1,2,8,6,3,4,7};
@@ -10,7 +9,6 @@ public class SelectionSortPractice {
         for(int i=0; i<arr.length;i++){
             System.out.println(arr[i]);
         }
-
     }
 
     public static int[] selectionSortingPractice(int[] arr)
