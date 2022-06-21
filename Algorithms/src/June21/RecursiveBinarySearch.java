@@ -1,21 +1,21 @@
-package Jun20;
+package June21;
 
 import java.util.Arrays;
 
-public class BinarySearchRecursive {
+public class RecursiveBinarySearch {
 
-    public static void main(String[] args)
+    public static void main(String args[])
     {
-        int[] arr = {1,4,6,2,3,7,8,9};
-        int result = recursiveBinarySearch(arr, 8 , 0, arr.length-1);
+        int[] arr = {1,4,3,2,6,7,5,9,0,-1};
+        int result = recursiveBinarySearch(arr,1,0,arr.length);
 
         if(result == -1)
         {
-            System.out.println("Element not found");
+            System.out.println("element not found");
         }
         else
         {
-            System.out.println("Element found at index: "+result);
+            System.out.println("Element found at position: "+result);
         }
     }
 
@@ -35,10 +35,9 @@ public class BinarySearchRecursive {
             }
             else
             {
-                return recursiveBinarySearch(arr,element,middle+1, high);
+                return recursiveBinarySearch(arr,element,middle+1,high);
             }
         }
         return -1;
     }
 }
-

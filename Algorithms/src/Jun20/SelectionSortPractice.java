@@ -10,7 +10,6 @@ public class SelectionSortPractice {
             System.out.println(arr[i]);
         }
     }
-
     public static int[] selectionSortingPractice(int[] arr)
     {
         for(int i=0; i<arr.length-1;i++)
