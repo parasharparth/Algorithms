@@ -6,9 +6,9 @@ public class OptimizedBubbleSorting {
     {
         int[] arr = {2,5,3,1,4,7,0,9,8};
         int[] result = optimizedBubbleSorting(arr);
-        for(int i=0; i<arr.length;i++)
+        for(int i=0; i<result.length;i++)
         {
-            System.out.println(arr[i]);
+            System.out.println(result[i]);
         }
     }
 
@@ -23,12 +23,12 @@ public class OptimizedBubbleSorting {
                 {
                     int temp = arr[j];
                     arr[j] = arr[j+1];
-                    arr[j] = temp;
+                    arr[j+1] = temp;
                     swapped = true;
                 }
             }
 
-            if(swapped == true)
+            if(swapped == false)
             {
                 break;
             }
