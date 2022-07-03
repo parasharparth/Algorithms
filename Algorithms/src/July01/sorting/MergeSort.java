@@ -48,7 +48,7 @@ public class MergeSort {
         }
         for(int j=0; j<length2; j++)
         {
-            arr2[j] = arr[middle+j+1];
+            arr2[j] = arr[j+middle+1];
         }
 
         int i=0;
