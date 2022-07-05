@@ -41,7 +41,7 @@ public class MergeSort {
     {
         //The first step for merging is to create the two arrays
         int length1 = middle-low+1;
-        int length2 = high-low;
+        int length2 = high-middle;
 
         //Create the two arrays
         int[] arr1 = new int[length1];
@@ -54,7 +54,7 @@ public class MergeSort {
         }
         for(int j=0; j<length2; j++)
         {
-            arr2[j] = arr[middle + j + 1];
+            arr2[j] = arr[j + middle + 1];
         }
 
         //The next step is to check the elements and populate the new array
@@ -63,7 +63,7 @@ public class MergeSort {
         int k = low;
         while(i<length1 && j<length2)
         {
-            if(arr[i] < arr[j])
+            if(arr1[i] < arr2[j])
             {
                 arr[k] = arr1[i];
                 i++;
