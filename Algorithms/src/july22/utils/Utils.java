@@ -4,8 +4,7 @@ public class Utils {
 
     public static int[] getArray()
     {
-        int[] arr = {0,9,8,7,6,5,4,3,2,1};
-        return arr;
+        return new int[]{0,9,8,7,6,5,4,3,2,1};
     }
 
     public static void printArray(int[] arr, int type)
@@ -13,27 +12,24 @@ public class Utils {
         if(type == 1)
         {
             System.out.println("The input array is: ");
-            for(int i=0; i<arr.length;i++)
-            {
-                System.out.print(arr[i]+" ");
+            for (int j : arr) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
         else if(type == 2)
         {
             System.out.println("Unsorted array is: ");
-            for(int i=0; i<arr.length;i++)
-            {
-                System.out.print(arr[i]+" ");
+            for (int j : arr) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
         else if(type == 3)
         {
             System.out.println("Sorted array is: ");
-            for(int i=0; i<arr.length;i++)
-            {
-                System.out.print(arr[i]+" ");
+            for (int j : arr) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
