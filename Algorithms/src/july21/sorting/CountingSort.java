@@ -15,7 +15,7 @@ public class CountingSort {
         //Think in steps
         //The first step is to find the maximum element of the array
         int max = arr[0];
-        for(int i=0; i<arr.length;i++)
+        for(int i=1; i<arr.length;i++)
         {
             if(arr[i] > max)
             {
@@ -50,12 +50,12 @@ public class CountingSort {
             count[arr[i]]-- ;
         }
 
-        //Copy the new array into the input array
-        for(int i=0; i<arr.length; i++)
-        {
-            output[i] = arr[i];
-        }
+//        //Copy the new array into the input array
+//        for(int i=0; i<arr.length; i++)
+//        {
+//            output[i] = arr[i];
+//        }
 
-        return arr;
+        return output;
     }
 }
