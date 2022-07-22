@@ -31,9 +31,8 @@ public class CountingSort {
         }
 
         //The third step is to populate the count array
-        for(int i=0; i<arr.length;i++)
-        {
-            count[arr[i]]++;
+        for (int j : arr) {
+            count[j]++;
         }
 
         //The fourth step is to find the cumulative sum for the count array
@@ -44,10 +43,9 @@ public class CountingSort {
 
         //The fifth step is to calculate the index
         int[] output = new int[arr.length];
-        for(int i=0; i<arr.length;i++)
-        {
-            output[count[arr[i]]-1] = arr[i];
-            count[arr[i]]--;
+        for (int j : arr) {
+            output[count[j] - 1] = j;
+            count[j]--;
         }
 
         return output;
