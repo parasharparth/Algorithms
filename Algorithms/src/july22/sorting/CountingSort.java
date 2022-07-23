@@ -1,6 +1,6 @@
-package july21.sorting;
+package july22.sorting;
 
-import july21.utils.Utils;
+import july22.utils.Utils;
 
 public class CountingSort {
 
@@ -12,7 +12,6 @@ public class CountingSort {
 
     public static int[] countingSort(int[] arr)
     {
-        //Think in steps
         //The first step is to find the maximum element of the array
         int max = arr[0];
         for(int i=1; i<arr.length;i++)
@@ -23,39 +22,32 @@ public class CountingSort {
             }
         }
 
-        //The second step is to define the count array and initialize it with "0" elements
+        //The second step is to define the count array
         int[] count = new int[max+1];
-        for(int i=0; i<count.length;i++)
+        for(int i=0; i<count.length; i++)
         {
             count[i] = 0;
         }
 
-        //Then fill the count array with the elements
-        for(int i=0; i<arr.length;i++)
+        //The third step is to populate the count array
+        for(int i=0; i<count.length; i++)
         {
             count[arr[i]]++;
         }
 
-        //The third step is to calculate the cumulative sum in the count array
-        for(int i=1; i<arr.length;i++)
+        //The fourth step is to find the cumulative sum
+        for(int i=1; i<count.length; i++)
         {
             count[i] += count[i-1];
         }
 
-        //the last step is to find the index of each element and then according to the count, place it the new array
+        //The fifth step is to sort using index
         int[] output = new int[arr.length];
-        for(int i=arr.length-1; i>=0; i--)
+        for(int i=0; i<arr.length; i++)
         {
             output[count[arr[i]]-1] = arr[i];
-            count[arr[i]]-- ;
+            count[arr[i]]--;
         }
-
-//        //Copy the new array into the input array
-//        for(int i=0; i<arr.length; i++)
-//        {
-//            output[i] = arr[i];
-//        }
-
         return output;
     }
 }
