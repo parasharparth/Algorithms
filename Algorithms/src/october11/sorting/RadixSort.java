@@ -30,11 +30,7 @@ public class RadixSort {
             }
         }
         int[] count = new int[max+1];
-        for(int i=0; i<count.length; i++)
-        {
-            count[i] = 0;
-        }
-        for(int i=0; i<arr.length; i++)
+        for(int i:arr)
         {
             count[(arr[i]/place)%10]++;
         }
@@ -43,14 +39,10 @@ public class RadixSort {
             count[i] += count[i-1];
         }
         int[] output = new int[arr.length];
-        for(int i=0; i<arr.length; i++)
-        {
+        for(int i:arr){
             output[count[(arr[i]/place)%10]-1] = arr[i];
             count[(arr[i]/place)%10]--;
         }
-        for(int i=0; i<arr.length; i++)
-        {
-            arr[i] = output[i];
-        }
+        System.arraycopy(output, 0, arr, 0, arr.length);
     }
 }
