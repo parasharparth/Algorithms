@@ -13,20 +13,12 @@ public class CountingSort {
             }
         }
         int[] count = new int[max+1];
-        for(int i=0; i<count.length;i++)
-        {
-            count[i] = 0;
-        }
-        for(int i=0; i<arr.length; i++)
-        {
+        for(int i:arr)
             count[arr[i]]++;
-        }
         for(int i=1; i<arr.length; i++)
-        {
             count[i] += count[i-1];
-        }
         int[] output = new int[arr.length];
-        for(int i=0; i<arr.length; i++)
+        for(int i : arr)
         {
             output[count[arr[i]]-1] = arr[i];
             count[arr[i]]--;
