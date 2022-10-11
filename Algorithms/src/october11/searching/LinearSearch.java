@@ -2,7 +2,7 @@ package october11.searching;
 
 public class LinearSearch {
 
-    public static int linearSearch(int[] arr, int element)
+    public int linearSearch(int[] arr, int element)
     {
         for(int i=0; i<arr.length; i++)
         {
