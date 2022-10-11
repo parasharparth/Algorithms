@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RecursiveBinarySearch {
 
-    public static int binarySearch(int[] arr, int element, int low, int high)
+    public int binarySearch(int[] arr, int element, int low, int high)
     {
         Arrays.sort(arr);
         if(low<=high)
