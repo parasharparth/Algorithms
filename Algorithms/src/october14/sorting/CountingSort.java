@@ -1,18 +1,12 @@
 package october14.sorting;
 
+import october14.utils.Utils;
+
 public class CountingSort {
 
     public static int[] countingSort(int[] arr)
     {
-        int max = arr[0];
-        for(int i=1; i<arr.length; i++)
-        {
-            if(arr[i] > max)
-            {
-                max = arr[i];
-            }
-        }
-        int[] count = new int[max+1];
+        int[] count = new int[Utils.findMax(arr)+1];
         for(int i:arr)
         {
             count[arr[i]]++;
