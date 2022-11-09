@@ -1,9 +1,9 @@
 package november08.testing;
 
-import november04.searching.BinarySearch;
-import november04.searching.LinearSearch;
-import november04.searching.RecursiveBinarySearch;
-import november04.sorting.*;
+import november08.searching.BinarySearch;
+import november08.searching.LinearSearch;
+import november08.searching.RecursiveBinarySearch;
+import november08.sorting.*;
 import november08.utils.Utils;
 
 import java.util.Scanner;

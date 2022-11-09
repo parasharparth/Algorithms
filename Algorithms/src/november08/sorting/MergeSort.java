@@ -4,7 +4,7 @@ public class MergeSort {
 
     public static int[] mergeSort(int[] arr, int low, int high)
     {
-        if(low <= high)
+        if(low < high)
         {
             int middle = low + (high - low)/2;
             mergeSort(arr, low, middle);
