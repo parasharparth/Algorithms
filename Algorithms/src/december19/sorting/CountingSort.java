@@ -21,6 +21,6 @@ public class CountingSort {
             output[count[arr[i]]-1] = arr[i];
             count[arr[i]]--;
         }
-        return arr;
+        return output;
     }
 }
