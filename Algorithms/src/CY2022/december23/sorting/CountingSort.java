@@ -1,6 +1,6 @@
 package CY2022.december23.sorting;
 
-import october26.utils.Utils;
+import CY2022.october26.utils.Utils;
 
 public class CountingSort {
 
