@@ -1,10 +1,10 @@
-package december12.testing;
+package CY2022.december11.testing;
 
+import CY2022.december11.utils.Utils;
 import CY2022.december11.searching.BinarySearch;
 import CY2022.december11.searching.LinearSearch;
 import CY2022.december11.searching.RecursiveBinarySearch;
 import CY2022.december11.sorting.*;
-import december12.utils.Utils;
 
 import java.util.Scanner;
 
