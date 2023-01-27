@@ -1,0 +1,43 @@
+package CY2022.July01.sorting;
+
+public class SelectionSort {
+
+    public static void main(String args[])
+    {
+        //The first step is to get the input array
+        int[] arr = {0,9,8,7,6,5,4,3,2,1};
+        System.out.println("The unsorted array is: ");
+        for(int i=0; i<arr.length;i++)
+        {
+            System.out.print(arr[i]+",");
+        }
+        System.out.println();
+
+        System.out.println("The sorted array is: ");
+        int[] result = selectionSort(arr);
+        for(int i=0; i<arr.length;i++)
+        {
+            System.out.print(arr[i]+",");
+        }
+    }
+
+    public static int[] selectionSort(int[] arr)
+    {
+        for(int i=0; i<arr.length;i++)
+        {
+            int minimum_index = i;
+            for(int j=0; j<arr.length;j++)
+            {
+                if(arr[j] < arr[minimum_index])
+                {
+                    minimum_index = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[minimum_index];
+            arr[minimum_index] = temp;
+        }
+        return arr;
+    }
+}
+
